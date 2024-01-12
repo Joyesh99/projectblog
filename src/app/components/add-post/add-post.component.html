@@ -1,0 +1,5 @@
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()" class="add-post-form">
+    <!-- Form fields for post title, content, etc. -->
+    <button type="submit" [disabled]="postForm.invalid">Submit</button>
+  </form>
+  

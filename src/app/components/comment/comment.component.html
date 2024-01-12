@@ -1,0 +1,8 @@
+<div *ngFor="let comment of comments" class="comment">
+    <p>{{comment.text}} - {{comment.author}}</p>
+  </div>
+  <form [formGroup]="commentForm" (ngSubmit)="onSubmit" class="comment-form">
+    <!-- Form fields for adding comments -->
+    <button type="submit" [disabled]="commentForm.invalid">Add Comment</button>
+  </form>
+  

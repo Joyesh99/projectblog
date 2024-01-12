@@ -1,0 +1,5 @@
+<div *ngIf="post" class="post-detail">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.content }}</p>
+  <app-comment [comments]="post.comments"></app-comment>
+</div>
